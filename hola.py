@@ -149,3 +149,44 @@
 #         print ("ustred reprobo")        
 # //////////////////////////////////////////////////////////////////////////////
 
+#pida al usuario un numero y sume todos los digitos desde el 1 hasta ese numero mostrando la suma
+# num=int(input("ingrese el numero"))
+# for i in range (num)
+#     suma+=i+1
+# print ("la suma de los numeros es",suma)  
+
+# #pares y impares
+
+# num=int(input("ingrese el numero"))
+# if num % 2==0:
+#     print ("el numero",num , "es par")
+# else:
+#     print ("el numero",num , "es impar") 
+
+#pida una cantidad de numeros y vea de esos numeros cual es par y impar
+
+#yo
+
+# cant=int(input("ingrese la cantidad de numeros"))
+# suma=0
+# for i in range (cant):
+#     suma+=i+1
+#     if cant% 2==0:
+#     print ("el numero",cant , "es par")
+# else:
+#     print ("el numero",cant, "es impar") 
+
+
+#profe
+# cant=int(input("ingrese la cantidad de numeros"))
+# for i in range (cant):
+#     num=int(input("ingrese un numero"))
+
+#     if num% 2==0:
+#         print ("el numero",num , "es par")
+# else:
+#     print ("el numero",num, "es impar") 
+
+
+
+
