@@ -186,6 +186,108 @@
 #         print ("el numero",num , "es par")
 # else:
 #     print ("el numero",num, "es impar") 
+# /////////////////////////////////////////////////////////////////////////////////////////////
+
+#  definir 2 candidatos. preguntar la cantidad de votantes
+# preguntar a cad votante por quien votara mostrando las alternativas 
+# contar votos y resultados
+# definir el ganador y considerar un empate
+# c1= "aqua"
+# c2= "koku"
+# cv1=0
+# cv2=0
+# cantV=int(input("cuantos votantes son? :"))
+
+# for i in range (cantV):
+#     print(f"por quien votara? 1.-{c1}, 2.- {c2}")     #f es para variables encorchetadas se pone antes de comas
+#     voto=int(input())
+#     if voto==1:
+#         cv1=cv1+1
+#         print ("ha votado por", c1)
+#     else:
+#         cv2=cv2+1
+# print(f"la cantidad de votos de {c1} es {cv1}")
+# print(f"la cantidad de votos de {c2} es {cv2}")
+# if cv1>cv2:
+#     print(f"gano{c1}")
+# elif cv1<cv2:
+#     print(f"gano{c2}")
+# else:
+#     print ("es un empate")
+#////////////////////////////////////////////////////////////////////////////
+
+# frase=input("ingrese una frase")
+# c=0
+# cons=0
+# v=0
+# for i in frase:
+#     # #print(i)
+#     if i.lower() in "aeiou":        #lower para todo minusculas upper para todo mayusculas
+#         v=v+1
+#     elif i.lower()=="" :  
+#      cons=cons+1
+        
+#     c=c+1
+# print ("la cantidad de caracteres es", c) 
+# print ("la cantidad de vocales", v) 
+# print ("la cantidad de consonantes es", cons) 
+#//////////////////////////////////////////////////////////////////ver crpeta del 17
+
+##################version alternativa#############################
+# num=int(input("ingrese un numero"))
+# for i in range(num):
+   
+#     if (i+1) %2==0:
+#         print (f"el numero {i+1} es par")
+       
+#     else:
+#         print(f"el numero {i+1} es impar")
+####################version profe##################################
+# for i in range(num):
+   
+#    if (i) %2==0:
+#         print (f"el numero {i} es par")
+       
+#   else:
+#         print(f"el numero {i} es impar")
+# //////////////////////////////////////////////////////////////
+# ejercicio de supermercado de pseint a python
+# cant=int(input("cuanto productos llevara"))
+# op=0
+
+# for i in range(cant):
+#     print("""
+#         que producto llevara?
+#         1.- diazepam $9000
+#         2.- metametozona $18500
+#         3.- oblea china $1000    
+#           """)
+#     op=int(input()):
+#     if op==1:
+#         print ("usted lleva diazepam")
+#         total=total+9000
+#     elif op==2:
+#      print ("usted lleva metametozona")
+#      total=total+18500
+#      elif op==3:
+#      op==3:print ("usted lleva oblea china")
+#      total=total+1000
+#     else:
+#        print ("seleccione una opción valida") 
+# print("el total neto es",total)
+# print("el total neto mas iva es",total*1.19)
+# ////////////////////////////////////////////////////////////////////////////////////
+
+
+         
+        
+ 
+
+
+
+
+
+   
 
 
 
