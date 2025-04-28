@@ -277,14 +277,222 @@
 # print("el total neto es",total)
 # print("el total neto mas iva es",total*1.19)
 # ////////////////////////////////////////////////////////////////////////////////////
+#explicacion y uso de while
 
 
-         
-        
+# clave=3344
+# password=int (input("ingrese su pass:"))
+# while clave!=password:
+#     print ("error, clave invalida")
+#     password=int(input("ingrese su pass:"))
+
+
+# print("bienvenido al sistema")
+
+#clave con 3 intentos
+
+# clave=3344
+# intentos=0
+# password=int (input("ingrese su pass:"))
+# while clave!=password and intentos<=3:
+#     print ("error, clave invalida")
+#     intentos=intentos+1
+#     password=int(input("ingrese su pass:"))
+# if intentos>=3:
+#     print ("ha alcanzado la cantidad maxima de intentos")
+# else:
+#     print("bienvenido al sistema")             
+# /////////////////////////////////////////////////////////////////////////
+# suma=0
+# while True:
+#     num=int(input("ingrese un numero , cero para salir:"))
+#     if num==0:
+#         break
+#     suma+=num
+#     print (suma)
+# print(F"la suma total es {suma}")
+# //////////////////////////////////////////////////////////////////////////////////////////
+# pida al usuario el limite inferior y superior de un rango
+# despues genere un numero al azar dentro de ese rango
+# el segundo numero, no debe ser menor que el primero 
+# pero debe darle la oportunidad al usuario de ingresar otro
+
+# import random 
+# print ("ingrese los numeros")
+# n1=int(input("ingrese el primer numero"))
+# n2=int(input("ingrese el primer numero"))
+
+# numram=random.randint(n1, n2)             
+# # .es para ver librerias
+# print (numram)
+# # //////////////////////////////////////////////////////////////
+
+# import random 
+# print ("ingrese los numeros")
+# n1=int(input("ingrese el primer limite"))
+# n2=int(input("ingrese el segundo limite"))
+# numram=random.randint(n1, n2) 
+
+# while n2<=n1:
+#     print ("el numero debe ser mayor que el anterior")
+#     n2=int(input("ingrese otro numero mayor que el anterior"))
+
+# numram=random.randint(n1,n2)
+
+# print (numram)
+# //////////////////////////////////////////
+
+
+# yo:
+
+# import random 
+# tries=3
+# numram=random.randint(1,50)
+# print ("ingrese un numero ")
+# n1=int(input())
+# while tries<=3:
+
+#     if n1<numram:
+#         print("el numero es mayor intenta denuevo")
+#         tries=tries+1
+#     else:
+#         print ("el numero es menor intenta denuevo")
+#         tries=tries+1
+#     if numram==n1: 
+#         break
+
+# profe:
+
+# intentos=5
+# num=int(input())
+# while numram!=num:
+#     intentos-=1
+#     if intentos==0
+#         break
+#     if num>numram:
+#         print ("el numero a adivinar es menor")
+#     else:
+#         print ("el numero a a divinar es mayor")    
+#         print(f"te quedan {intentos} intentos")   
+#         num=int (input())
+
+# print ("sos un genio adivinaste")
+
+# if intentos==0:
+#     print("perdiste")
+# else:
+#     print("sos un genio,adivinaste el numero")
+# //////////////////////////////////////////////////////////////
+
+# designe 2 peleadores solicitando sus nombres
+# cadfa peleador tiene 50 hp debe mostraer la barra de energia  las peleas son por turnos 
+# cada turno el peleador  ataca entre 3 y 15 
+# existe posibilidad de ataque critico  del 20%
+# gana el que quita todo el hp al rival
+import time
+import random
+
+hp1=50
+hp2=50
+ultracounter=0
+turno=random.randit(1,2)
+print ("welcome to code fighter")
+print ("ingrese sus nombre j1" )
+j1=input (())
+print ("ingrese su nombre j2")
+j2=input (())
+print ("SELECT YOUR FIGHTER" (j1))
+time.sleep(2)
+print (input(1=="Ryu",   2=="Ken"  , 3=="Chun-Li" ,  4=="Birdie  5E. Honda" , 6=="Blanka" , 7=="Guile" , 8=="Zangief"))
+j1char=numram=random.randint(1,7)
+print ("SELECT YOUR PLAYER" (j2))
+time.sleep(2)
+print (input(1=="Ryu" ,   2=="Ken" ,   3=="Chun-Li" ,  4=="Birdie  5E. Honda" , 6=="Blanka" , 7=="Guile" , 8=="Zangief"))
+j2char=numram=random.randint(1,7)
+print(j1char)
+print("VS")
+print(j2char)
+time.sleep(2)
+print("GET READY FOR BATTLEEEEEEEEEEEEEEEEEE")
+
+while hp1 or hp2 >0:
+    if turno %2==0:
+        print(j1char ,"attacks")
+        time.sleep(2)
+        j1atk=random.randint(3,15)
+        j1prob=random.randint(1,2)
+    if  j1prob==1:
+        print("hit!")
+        critical=random.randint(1,7)
+        if critical==2 or 7:
+            print("VISERAL HIT")
+            j1atk*2
+        else:
+            hp2-=j1atk
+            print(j2char)
+            print("/"*hp2)
+    else:
+        print(j2char "DODGED YOUR ATTACK")
+
+    if turno %2!==0:
+    print(j2char "attacks!")
+    time.sleep(2)
+    j2atk=random.randint(3,15)
+    j2prob=random.randint(1,2)
+    if  j2prob=1:
+        print("hit!")
+        critical=random.randint(1,7)
+        if critical==2 or 7:
+        print("VISERAL HIT")
+        j2atk*2
+        else:
+        hp1-=j2atk
+        print(j2char)
+        print("/"*hp1)
+    else:
+        print(j2 "DODGED YOUR ATTACK")
+            
+
+if hp1<=0:
+ j2atk=random.randint(3,15)
+ j2prob=random.randint(1,2)
+if  j2prob=1:
+    hp2-=j1atk
+ ultracounter=ultracounter+1
+    time.sleep(1)
+elif:
+print("KO")
+IF ultracounter>=5:
+print(" ULTRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA") 
+
+
+
+if hp2<=0:
+ j1atk=random.randint(3,15)
+ j1prob=random.randint(1,2)
+if  j1prob=1:
+    hp1-=j2atk
+ ultracounter=ultracounter+1
+    time.sleep(1)
+elif:
+print("KO")
+IF ultracounter>=5:
+print(" ULTRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA") 
+
+ 
  
 
 
 
+     
+ 
+
+
+# CREAR UN CAJERO AUTOMATICO 
+# TENER EN CUENTA CAJAS DE BILLETES DE 5000 10000 Y 20000
+# CADA CAJA  TIENE 30 BILLETES VERIFICAR SI EL MONTO SOLICITADO ESTA DISPONIBLE EN EL CAJERO
+# VERIFICIAR SI MONTO SOLICITADO ES POSIBLE POR EL MULTIPLO DE LOS BILLETES DISPONIBLKES
+# AL TERMNIAR CADA TRANSACCION DEBE MOSTRAR SALDO 
 
 
    

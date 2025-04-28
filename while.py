@@ -12,14 +12,14 @@
 
 #clave con 3 intentos
 
-clave=3344
-intentos=0
-password=int (input("ingrese su pass:"))
-while clave!=password and intentos<=3:
-    print ("error, clave invalida")
-    intentos=intentos+1
-    password=int(input("ingrese su pass:"))
-if intentos>=3:
-    print ("ha alcanzado la cantidad maxima de intentos")
-else:
-    print("bienvenido al sistema")
+# clave=3344
+# intentos=0
+# password=int (input("ingrese su pass:"))
+# while clave!=password and intentos<=3:
+#     print ("error, clave invalida")
+#     intentos=intentos+1
+#     password=int(input("ingrese su pass:"))
+# if intentos>=3:
+#     print ("ha alcanzado la cantidad maxima de intentos")
+# else:
+#     print("bienvenido al sistema")                              droblesr perfil profe
