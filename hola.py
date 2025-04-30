@@ -395,89 +395,118 @@ import random
 hp1=50
 hp2=50
 ultracounter=0
-turno=random.randit(1,2)
+turno=random.randint(1,2)
+j2atk=random.randint(3,15)
+j2prob=random.randint(1,2) 
 print ("welcome to code fighter")
 print ("ingrese sus nombre j1" )
 j1=input (())
 print ("ingrese su nombre j2")
 j2=input (())
-print ("SELECT YOUR FIGHTER" (j1))
+print ("SELECT YOUR FIGHTER", (j1))
 time.sleep(2)
-print (input(1=="Ryu",   2=="Ken"  , 3=="Chun-Li" ,  4=="Birdie  5E. Honda" , 6=="Blanka" , 7=="Guile" , 8=="Zangief"))
-j1char=numram=random.randint(1,7)
-print ("SELECT YOUR PLAYER" (j2))
+print ( "Ryu",   " Ken"  ,  "Chun-Li" ,    "Birdie  5E. Honda" , "Blanka" ,  "Guile" , "Zangief")
+j1char= input(())
+
+
+print ("SELECT YOUR FIGHTER", (j2))
 time.sleep(2)
-print (input(1=="Ryu" ,   2=="Ken" ,   3=="Chun-Li" ,  4=="Birdie  5E. Honda" , 6=="Blanka" , 7=="Guile" , 8=="Zangief"))
-j2char=numram=random.randint(1,7)
-print(j1char)
+print ( "Ryu",   "Ken"  ,  "Chun-Li" ,    "Birdie  5E. Honda" , "Blanka" ,  "Guile" , "Zangief")
+j2char= input(())
+
+
+print (j1char)
 print("VS")
 print(j2char)
 time.sleep(2)
 print("GET READY FOR BATTLEEEEEEEEEEEEEEEEEE")
 
-while hp1 or hp2 >0:
-    if turno %2==0:
+while hp1>=0 and hp2 >=0:
+    j1atk=random.randint(3,15)
+    j2atk=random.randint(3,15)
+    j1prob=random.randint(1,2)
+    j2prob=random.randint(1,2)
+    critical=random.randint(1,7)
+    
+    if turno==1:
         print(j1char ,"attacks")
-        time.sleep(2)
-        j1atk=random.randint(3,15)
-        j1prob=random.randint(1,2)
+        time.sleep(3)
+     
+        
     if  j1prob==1:
-        print("hit!")
-        critical=random.randint(1,7)
-        if critical==2 or 7:
+            print("hit!")
+            
+    if j1prob==2:
+        print(j2char,"DODGED YOUR ATTACK")
+    time.sleep(3)
+    if critical==7:
             print("VISERAL HIT")
             j1atk*2
-        else:
             hp2-=j1atk
             print(j2char)
             print("/"*hp2)
     else:
-        print(j2char "DODGED YOUR ATTACK")
+            
+        hp2-=j1atk
+           
+        print(j1char)
+        print("/"*hp1)
 
-    if turno %2!==0:
-    print(j2char "attacks!")
-    time.sleep(2)
+
+    if turno ==2:
+
+        print(j2char,"attacks!")
+        time.sleep(2)
+        
+        if  j2prob==2:
+            print("hit!")
+            
+            if critical==7:
+                print("VISERAL HIT")
+                j2atk*2
+                hp1-=j2atk
+                print(j1char)
+                print("/"*hp1)
+            else:
+                hp1-=j2atk
+                
+                print(j1char)
+                print("/"*hp1)
+    
+    if j1prob==1:
+        print(j2, "DODGED YOUR ATTACK")
+            
+if hp1<=0:
+ 
     j2atk=random.randint(3,15)
     j2prob=random.randint(1,2)
-    if  j2prob=1:
-        print("hit!")
-        critical=random.randint(1,7)
-        if critical==2 or 7:
-        print("VISERAL HIT")
-        j2atk*2
-        else:
-        hp1-=j2atk
-        print(j2char)
-        print("/"*hp1)
-    else:
-        print(j2 "DODGED YOUR ATTACK")
-            
-
-if hp1<=0:
- j2atk=random.randint(3,15)
- j2prob=random.randint(1,2)
-if  j2prob=1:
-    hp2-=j1atk
- ultracounter=ultracounter+1
-    time.sleep(1)
-elif:
-print("KO")
-IF ultracounter>=5:
-print(" ULTRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA") 
+    if  j2prob==1:
+        hp2-=j1atk
+        ultracounter=ultracounter+1
+        time.sleep(1)
+else:
+        print("//////////////////////////////////////////KO///////////////////////////////////")
+        print ("////////////////////////////",(j2char), "WINS/////////////////////////////////////")
+if ultracounter>=3:
+        print(" ULTRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA") 
+        
 
 
 
 if hp2<=0:
- j1atk=random.randint(3,15)
- j1prob=random.randint(1,2)
-if  j1prob=1:
-    hp1-=j2atk
- ultracounter=ultracounter+1
-    time.sleep(1)
-elif:
-print("KO")
-IF ultracounter>=5:
-print(" ULTRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA") 
+    j1atk=random.randint(3,15)
+    j1prob=random.randint(1,2)
+    if  j1prob==1:
+        hp1-=j2atk
+        ultracounter=ultracounter+1
+        time.sleep(1)
+else:
+        print("/////////////////////////////KO////////////////////////////////////////////////")
+        print ("////////////////////////////",(j1char), "WINS/////////////////////////////////////")
+if ultracounter>=3:
+        print(" ULTRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+     
+
 
  
  
@@ -494,9 +523,28 @@ print(" ULTRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 # VERIFICIAR SI MONTO SOLICITADO ES POSIBLE POR EL MULTIPLO DE LOS BILLETES DISPONIBLKES
 # AL TERMNIAR CADA TRANSACCION DEBE MOSTRAR SALDO 
 
+# intentos=3
+# while intentos>0:
+#     intentos-=1
+#     color=input("ingrese un color: ")  
 
-   
+#     if color.lower()!="negro":
+#         print("el color no es el requerido")
+#     else:
+#         print("el color es el requerido") 
+#         break   
+
+# la florida 20%, la pintana 30%, puente alto 25%, san joaquin 15%
+# grupo familiar: 1=>2%, 2 a 4 => 3% 5 o mas =>4%
+# preguntar al usuario en que comuna vive 
+# preguntar con cuantas personas vive
+# el arancel actual es de 200.000 por semestre
+# basados en las respuestas del usuario y la info dada calcular descuento 
 
 
-
+# clasificar segun categoria y precio 
+# cat 1+200, cat 2+400, cat 3 +600
+# precios: 1000 y menos;3%, entre 1001 y 5000 :5%, 5001 y mas 6%
+#poner listadp de 3 productos por categoria  1 2 y 3 
+# agregar los impuestos al precio , segun la cat y luego aplicar descuento al total de la boleta segun el monto 
 
