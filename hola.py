@@ -337,7 +337,7 @@
 #     print ("el numero debe ser mayor que el anterior")
 #     n2=int(input("ingrese otro numero mayor que el anterior"))
 
-# numram=random.randint(n1,n2)
+
 
 # print (numram)
 # //////////////////////////////////////////
@@ -389,122 +389,122 @@
 # cada turno el peleador  ataca entre 3 y 15 
 # existe posibilidad de ataque critico  del 20%
 # gana el que quita todo el hp al rival
-import time
-import random
+# import time
+# import random
 
-hp1=50
-hp2=50
-ultracounter=0
-turno=random.randint(1,2)
-j2atk=random.randint(3,15)
-j2prob=random.randint(1,2) 
-print ("welcome to code fighter")
-print ("ingrese sus nombre j1" )
-j1=input (())
-print ("ingrese su nombre j2")
-j2=input (())
-print ("SELECT YOUR FIGHTER", (j1))
-time.sleep(2)
-print ( "Ryu",   " Ken"  ,  "Chun-Li" ,    "Birdie  5E. Honda" , "Blanka" ,  "Guile" , "Zangief")
-j1char= input(())
-
-
-print ("SELECT YOUR FIGHTER", (j2))
-time.sleep(2)
-print ( "Ryu",   "Ken"  ,  "Chun-Li" ,    "Birdie  5E. Honda" , "Blanka" ,  "Guile" , "Zangief")
-j2char= input(())
+# hp1=50
+# hp2=50
+# ultracounter=0
+# turno=random.randint(1,2)
+# j2atk=random.randint(3,15)
+# j2prob=random.randint(1,2) 
+# print ("welcome to code fighter")
+# print ("ingrese sus nombre j1" )
+# j1=input (())
+# print ("ingrese su nombre j2")
+# j2=input (())
+# print ("SELECT YOUR FIGHTER", (j1))
+# time.sleep(2)
+# print ( "Ryu",   " Ken"  ,  "Chun-Li" ,    "Birdie  5E. Honda" , "Blanka" ,  "Guile" , "Zangief")
+# j1char= input(())
 
 
-print (j1char)
-print("VS")
-print(j2char)
-time.sleep(2)
-print("GET READY FOR BATTLEEEEEEEEEEEEEEEEEE")
+# print ("SELECT YOUR FIGHTER", (j2))
+# time.sleep(2)
+# print ( "Ryu",   "Ken"  ,  "Chun-Li" ,    "Birdie  5E. Honda" , "Blanka" ,  "Guile" , "Zangief")
+# j2char= input(())
 
-while hp1>=0 and hp2 >=0:
-    j1atk=random.randint(3,15)
-    j2atk=random.randint(3,15)
-    j1prob=random.randint(1,2)
-    j2prob=random.randint(1,2)
-    critical=random.randint(1,7)
+
+# print (j1char)
+# print("VS")
+# print(j2char)
+# time.sleep(2)
+# print("GET READY FOR BATTLEEEEEEEEEEEEEEEEEE")
+
+# while hp1>=0 and hp2 >=0:
+#     j1atk=random.randint(3,15)
+#     j2atk=random.randint(3,15)
+#     j1prob=random.randint(1,2)
+#     j2prob=random.randint(1,2)
+#     critical=random.randint(1,7)
     
-    if turno==1:
-        print(j1char ,"attacks")
-        time.sleep(3)
+#     if turno==1:
+#         print(j1char ,"attacks")
+#         time.sleep(3)
      
         
-    if  j1prob==1:
-            print("hit!")
+#     if  j1prob==1:
+#             print("hit!")
             
-    if j1prob==2:
-        print(j2char,"DODGED YOUR ATTACK")
-    time.sleep(3)
-    if critical==7:
-            print("VISERAL HIT")
-            j1atk*2
-            hp2-=j1atk
-            print(j2char)
-            print("/"*hp2)
-    else:
+#     if j1prob==2:
+#         print(j2char,"DODGED YOUR ATTACK")
+#     time.sleep(3)
+#     if critical==7:
+#             print("VISERAL HIT")
+#             j1atk*2
+#             hp2-=j1atk
+#             print(j2char)
+#             print("/"*hp2)
+#     else:
             
-        hp2-=j1atk
+#         hp2-=j1atk
            
-        print(j1char)
-        print("/"*hp1)
+#         print(j1char)
+#         print("/"*hp1)
 
 
-    if turno ==2:
+#     if turno ==2:
 
-        print(j2char,"attacks!")
-        time.sleep(2)
+#         print(j2char,"attacks!")
+#         time.sleep(2)
         
-        if  j2prob==2:
-            print("hit!")
+#         if  j2prob==2:
+#             print("hit!")
             
-            if critical==7:
-                print("VISERAL HIT")
-                j2atk*2
-                hp1-=j2atk
-                print(j1char)
-                print("/"*hp1)
-            else:
-                hp1-=j2atk
+#             if critical==7:
+#                 print("VISERAL HIT")
+#                 j2atk*2
+#                 hp1-=j2atk
+#                 print(j1char)
+#                 print("/"*hp1)
+#             else:
+#                 hp1-=j2atk
                 
-                print(j1char)
-                print("/"*hp1)
+#                 print(j1char)
+#                 print("/"*hp1)
     
-    if j1prob==1:
-        print(j2, "DODGED YOUR ATTACK")
+#     if j1prob==1:
+#         print(j2, "DODGED YOUR ATTACK")
             
-if hp1<=0:
+# if hp1<=0:
  
-    j2atk=random.randint(3,15)
-    j2prob=random.randint(1,2)
-    if  j2prob==1:
-        hp2-=j1atk
-        ultracounter=ultracounter+1
-        time.sleep(1)
-else:
-        print("//////////////////////////////////////////KO///////////////////////////////////")
-        print ("////////////////////////////",(j2char), "WINS/////////////////////////////////////")
-if ultracounter>=3:
-        print(" ULTRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA") 
+#     j2atk=random.randint(3,15)
+#     j2prob=random.randint(1,2)
+#     if  j2prob==1:
+#         hp2-=j1atk
+#         ultracounter=ultracounter+1
+#         time.sleep(1)
+# else:
+#         print("//////////////////////////////////////////KO///////////////////////////////////")
+#         print ("////////////////////////////",(j2char), "WINS/////////////////////////////////////")
+# if ultracounter>=3:
+#         print(" ULTRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA") 
         
 
 
 
-if hp2<=0:
-    j1atk=random.randint(3,15)
-    j1prob=random.randint(1,2)
-    if  j1prob==1:
-        hp1-=j2atk
-        ultracounter=ultracounter+1
-        time.sleep(1)
-else:
-        print("/////////////////////////////KO////////////////////////////////////////////////")
-        print ("////////////////////////////",(j1char), "WINS/////////////////////////////////////")
-if ultracounter>=3:
-        print(" ULTRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+# if hp2<=0:
+#     j1atk=random.randint(3,15)
+#     j1prob=random.randint(1,2)
+#     if  j1prob==1:
+#         hp1-=j2atk
+#         ultracounter=ultracounter+1
+#         time.sleep(1)
+# else:
+#         print("/////////////////////////////KO////////////////////////////////////////////////")
+#         print ("////////////////////////////",(j1char), "WINS/////////////////////////////////////")
+# if ultracounter>=3:
+#         print(" ULTRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
      
 
 
@@ -512,7 +512,7 @@ if ultracounter>=3:
  
 
 
-
+# //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
      
  
 
@@ -547,4 +547,157 @@ if ultracounter>=3:
 # precios: 1000 y menos;3%, entre 1001 y 5000 :5%, 5001 y mas 6%
 #poner listadp de 3 productos por categoria  1 2 y 3 
 # agregar los impuestos al precio , segun la cat y luego aplicar descuento al total de la boleta segun el monto 
+
+# //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+# calcular el puntaje de credito 
+# calcular cuanto credito tiene una persona
+# en cierta entidad financiera considear:
+
+# cantidad de ingresos
+
+# nivel educacional
+
+# nacionalidad
+
+# cantidad de ingresos:
+# 500.000 a 1.000.000: 300.000
+# 1.000.000 a 1.500.000: 650.000
+# 1.500.000 o mas: 1.000.000
+
+# nivel educacional:
+
+# basico: x1, 
+# medio: x1.3
+# superior:1.5
+
+# nacioinalidad:
+# chilena:+300.000
+# extranjero:+0
+
+
+# credito=0
+
+# print("Bienvenido a su simulación de crédito bancario")
+# ing= int(input("""Seleccione su rango de ingresos:
+#           1.- $500.000 a 1.000.000
+#           2.- $1.000.000 a $1.500.000
+#           3.- $1.500.000 o más
+          
+#           """))
+
+# if ing==1:
+#     credito+=300000
+# elif ing==2:
+#     credito+=650000
+# elif ing==3:
+#     credito+=1000000
+# else:
+#     print("Ingrese una opción válida")
+
+# ne= int(input("""Seleccione su nivel educacional:
+#           1.- Básica
+#           2.- Media
+#           3.- Superior
+          
+#           """))
+# if ne==1:
+#     credito=credito
+# elif ne==2:
+#     credito=credito*1.3
+# elif ne==3:
+#     credito=credito*1.5
+# else:
+#     print("Ingrese una opción válida")
+
+# nacio=int(input("""Seleccione su nacionalidad:
+#           1.- Chilena
+#           2.- Extranjera
+          
+#           """))
+
+# if nacio==1:
+#     credito+=300000
+# elif nacio==2:
+#     credito=credito
+# else:
+#     print("Ingrese una opción válida")
+
+
+
+
+
+
+
+
+
+
+# /////////////////////////////////////////////////////////////////////////
+
+# pedir dia y mes de nacimiento y mostrar el signo zodiacal 
+# //////////////////////////////////////////////////////////////////////////////////
+
+# pida al iusuario 2 digitos verificando si el segundo es mayor
+# genere un numero aleatorio entre esos digitos 
+# imprima el numero de veces que salio ese numero por medio del siguiente simbolo ▄
+# import random
+
+# print ("ingrese 2 numeros")
+
+# print ("ingrese numero 1")
+# n1=int(input())
+# print ("ingrese numero 2")
+# n2=int(input())
+
+# while n1>n2:
+#     print ("el numero 2 no puede ser mayor que el numero 1")
+#     n2=int(input("numero 2:"))
+
+
+# num=random.randint(n1,n2)  
+
+# print("▄"*num)
+
+# //////////////////////////////////////////////////////////////////////////////////////////////////
+
+# crear un programa que pida la cantidad de ramos 
+# luego pida el promedio por cada materia 
+# basados en su promedio final
+#  aplicar puntaje de beneficios
+# 4.5 y 5: 300, 5.1 y 6.0: 500, 6.1 y 7.0: 800
+# agregar puntaje segun carrera
+# tecnico: +60, ingenieria: +40, diplomado:+20
+# import time
+# print("ingrese cantidad de ramos")
+# nramos=int(input())
+# for i in range (nramos):
+#     nota=float(input("ingrese el promedio de cada ramo"))
+#     total= nota+1
+
+# promedio=total/nramos
+
+# print ("su promedio es", round(promedio),1)
+
+# print ("calculando beneficios")
+# time.sleep (3)
+
+# beneficio=0
+
+# if promedio(4.5,5.0):
+#     beneficio+=300
+# elif promedio(5.1,6.0):
+#     beneficio+=500
+# elif promedio(6.1,7.0):
+#     beneficio+=800
+# print ("su beneficio es", beneficio)
+
+# print ("""ingrese su carrera
+#        1 tecnico
+#        2 ingenieria
+#        3 diplomado""""")
+# carrera=input(())
+
+# if carrera==1:
+#     beneficio+=
+
 
