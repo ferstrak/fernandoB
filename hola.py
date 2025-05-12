@@ -700,4 +700,69 @@
 # if carrera==1:
 #     beneficio+=
 
+# //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+# FUNCIONES
+
+# def suma():
+#     n1=int(input("ingrese un numero"))
+#     n2=int(input("ingrese otro numero"))
+#     print ("la suma es", n1+n2)
+# def resta():
+#     n1=int(input("ingrese un numero"))
+#     n2=int(input("ingrese otro numero"))
+#     print ("la resta es", n1-n2)
+# def multi():
+#     n1=int(input("ingrese un numero"))
+#     n2=int(input("ingrese otro numero"))
+#     print ("la multiplicacion es", n1*n2)
+# def divi():
+#     n1=int(input("ingrese un numero"))
+#     n2=int(input("ingrese otro numero"))
+#     try:
+#         resulta=n1/n2
+#         print("la division es", resulta)
+#     except ZeroDivisionError:
+#         print ("la división por cero no esta permitida")
+# def calcu():
+#     while True:
+#         op=int(input ('''seleccione una opcion:
+#                     1. suma
+#                     2. resta
+#                     3. multiplicación
+#                     4. division
+#                     5. salir
+                      
+#                       ''' 
+                     
+#                    ))
+#         match op:
+#             case 1:
+#                 print("suma")
+#                 suma()
+
+#             case 2:
+#                 print("resta")
+                
+#                 resta()
+            
+#             case 3:
+#                 print("multi")
+                
+#                 multi()
+                                                
+#             case 4:
+#                 print("divi")
+               
+#                 divi() 
+
+#             case 5:
+#                 print ("saliendo")   
+#                 break                                   
+#             case _:
+#                 print ("saliendo")  
+
+# calcu() 
+                                               
+# ctrl alt mas flechas seleccionas varias lineas y shift + alt volver tabs  case_: opcion default    seleccionar todo y poner "" ahorra tiempo al poner texto print  repasar while true y false
+# realizar un programamque inluya match y llame a otras 3 funciones estas funciones deben incluir if, if else, for y/o while y el programa debe ser recursivo
