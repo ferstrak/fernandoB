@@ -765,4 +765,128 @@
 # calcu() 
                                                
 # ctrl alt mas flechas seleccionas varias lineas y shift + alt volver tabs  case_: opcion default    seleccionar todo y poner "" ahorra tiempo al poner texto print  repasar while true y false
+
 # realizar un programamque inluya match y llame a otras 3 funciones estas funciones deben incluir if, if else, for y/o while y el programa debe ser recursivo
+
+# //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+# def menu_tarea():
+#     while True:
+#         print('''
+#             seleccione una opción
+#             1 numero al azar
+#             2 calcular arancel 
+#             3 salir
+#                         ''')
+#         op=int(input())
+#         match op:
+#             case 1:
+#                 azarN()
+#             case 2:
+#                 arancel()
+#             case 3:
+#                 break
+#             case _:                                                                     #para todo lo no mencionado#   
+#                 print ("opción invalida") 
+
+
+# /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+# crear un menu de carrito con las siguientes opciones
+# ingresqar nombre de ususario que sera mostrado en la boleta con un saludo 
+# comprar y poner productos para comprar con su precio correspondiente
+# sacar boleta calcular precio neto y el precio mas iva y mostrar totales
+# salir
+
+# consideraciones:
+# por lo menos 3 productos
+# no hay limite de compra 
+# se puede salir en cualquier momento
+# los montos de los productos son fijos
+  
+
+
+    
+def multi(): 
+    global multic
+    
+    print("elegiste multitool por 15000 units")
+    n+=15000
+   
+    multic+=1
+   
+def cat():  
+    global catc
+    print("elegiste cataplasm por 20000 units")
+    n+=20000
+    catc+=1
+  
+def heal():
+    global healc   
+    print("elegiste healkit por 8000 units")
+    n+=8000
+    healc+=1
+
+
+    
+def compra():
+
+    while True: 
+       
+        n=0 
+
+        print ("bienvenido a su carrito porfavor ingrese su nombre")
+        nom=input(())
+        print ('''productos disponibles
+            1. multi tool 15000 unit)
+            2. cataplasm 20000 unit)
+            3. heal kit 8000 unit
+            4. salir''')
+        
+        
+        op=int(input())
+
+            
+        match op:
+            case 1:
+                multi()
+            case 2:
+                cat()   
+            case 3:
+                heal()
+                                                        
+            case 4:
+                print("saliendo..")
+                break
+            case _:
+                print("opción invalida")
+
+        print("lleva", multic ,"multitools",catc , healc , "healkits" )
+
+        print("el total de su compra es",n) 
+
+
+# ///////////////////////////////////////////////////////////////////////////
+# promedios por cantidad de alumnos
+
+pedir cantidad de alumnos
+pedir notas por cada alumno
+promediar a cada alumno
+y mostrar si aprueba o no aprueba
+bonus: mostrar promedios de todos los almunos
+
+
+
+
+
+
+#   ////////////////////////////////////////////////////////////////////////////////              
+               
+#  dato extra del profe:               
+# # def suma_ret():
+# #     n1=int(input("ingrese un numero"))
+# #     n2=int(input("ingrese otro numero"))
+# #     return n1+n2
+
+# # nume=suma_ret()
+# # for i in range (nume):
+# #     print("hola")
