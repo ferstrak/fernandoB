@@ -806,73 +806,73 @@
 
 
     
-def multi(): 
-    global multic
+# def multi(): 
+#     global multic
     
-    print("elegiste multitool por 15000 units")
-    n+=15000
+#     print("elegiste multitool por 15000 units")
+#     n+=15000
    
-    multic+=1
+#     multic+=1
    
-def cat():  
-    global catc
-    print("elegiste cataplasm por 20000 units")
-    n+=20000
-    catc+=1
+# def cat():  
+#     global catc
+#     print("elegiste cataplasm por 20000 units")
+#     n+=20000
+#     catc+=1
   
-def heal():
-    global healc   
-    print("elegiste healkit por 8000 units")
-    n+=8000
-    healc+=1
+# def heal():
+#     global healc   
+#     print("elegiste healkit por 8000 units")
+#     n+=8000
+#     healc+=1
 
 
     
-def compra():
+# def compra():
 
-    while True: 
+#     while True: 
        
-        n=0 
+#         n=0 
 
-        print ("bienvenido a su carrito porfavor ingrese su nombre")
-        nom=input(())
-        print ('''productos disponibles
-            1. multi tool 15000 unit)
-            2. cataplasm 20000 unit)
-            3. heal kit 8000 unit
-            4. salir''')
+#         print ("bienvenido a su carrito porfavor ingrese su nombre")
+#         nom=input(())
+#         print ('''productos disponibles
+#             1. multi tool 15000 unit)
+#             2. cataplasm 20000 unit)
+#             3. heal kit 8000 unit
+#             4. salir''')
         
         
-        op=int(input())
+#         op=int(input())
 
             
-        match op:
-            case 1:
-                multi()
-            case 2:
-                cat()   
-            case 3:
-                heal()
+#         match op:
+#             case 1:
+#                 multi()
+#             case 2:
+#                 cat()   
+#             case 3:
+#                 heal()
                                                         
-            case 4:
-                print("saliendo..")
-                break
-            case _:
-                print("opción invalida")
+#             case 4:
+#                 print("saliendo..")
+#                 break
+#             case _:
+#                 print("opción invalida")
 
-        print("lleva", multic ,"multitools",catc , healc , "healkits" )
+#         print("lleva", multic ,"multitools",catc , healc , "healkits" )
 
-        print("el total de su compra es",n) 
+#         print("el total de su compra es",n) 
 
 
-# ///////////////////////////////////////////////////////////////////////////
-# promedios por cantidad de alumnos
+# # ///////////////////////////////////////////////////////////////////////////
+# # promedios por cantidad de alumnos
 
-pedir cantidad de alumnos
-pedir notas por cada alumno
-promediar a cada alumno
-y mostrar si aprueba o no aprueba
-bonus: mostrar promedios de todos los almunos
+# pedir cantidad de alumnos
+# pedir notas por cada alumno
+# promediar a cada alumno
+# y mostrar si aprueba o no aprueba
+# bonus: mostrar promedios de todos los almunos
 
 
 
@@ -890,3 +890,188 @@ bonus: mostrar promedios de todos los almunos
 # # nume=suma_ret()
 # # for i in range (nume):
 # #     print("hola")
+# ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+# for:
+# perros de caza
+# pida al usuario la cantidad de perros
+# muestr cual es la cuota minima de conejos
+# luego consulte cuantos conejos trajo
+# si elperro trajo la camtiodad minima cumplio la cuota sino se queda sin Filete 
+# mostrar resumen de perro que cumplieron y los que no
+# cantmin=3
+# total=0
+# perro=1
+# perroS=0
+# perroN=0
+# cant=int(input("ingrese un numero de perros"))
+# print("hay un total de", cant , "perros")
+# print ("la cuota minima de cinejos es 5")
+# print ("cuantos conejos trajo cada perro")
+
+# for i in range (cant):
+#     int(input("cuantos conejos cazo el perro", perro))
+#     if cantmin>=3:
+#         print("cumple con la cuota")
+#         perro+=1
+#         perroS+=1
+#     elif cantmin<3:
+#         print("no cumple con la cuota")
+#         perro+=1
+#         perroN+=1
+
+# print ("los que cumplieron son un total de", perroS , "los que no", perroN)
+
+
+
+# # profe:
+
+# import random 
+# while True:
+#     try:
+#         cant=int(input("ingrese un numero de perros"))
+#         break
+#     except Exception:
+#         print("solo se aceptan numeros enteros")
+# cuota=3
+# cumple=0
+
+
+# for i in range(cant):
+#     con=random.randint(0,5)
+#     print(f"el perro {i+1} trajo {con} conejos")
+#     if con>=cuota:
+#         print("el perro gana filete")
+#         cumple+=1
+#     else:
+#         print("se queda sin carne")
+        
+
+# print(f"la cantidad de perro que cumplieron es {cumple}")
+# print(f"la cantidad de perro que cumplieron es {cant-cumple}")
+
+# quiere pasar el ramo
+# pregunte la cantidad de rojos en el curso
+# los talleres que hay en el semestre son 4
+# por cada taller asistido obtiene 0.3 decimas
+# si el alumno tiene mas de 1 punto
+# tiene la bendicion del profe
+# sino no se le puede ayudar
+# ingrese la nota final y sume las decimas acomuladas
+# muestre si aprueba o reprueba
+
+# import random
+# while True:
+#     try:
+        
+#         cant=int(input("ingrese el numero de rojos en el curso"))
+#         break
+#     except Exception:
+#         print("solo se aceptan numeros enteros")
+# extra=0
+
+
+# for i in range(cant):
+   
+#     print("cuantos talleres asistio")
+#     con=random.randint(0,5)
+    
+#     print(f"el estudiante {i+1} asistio a {con} talleres")
+
+#     if con==0:
+#         print("no asistio a ningun taller")
+#     if con==1:
+#         extra+=0.3
+#     if con==2:
+#         extra+=0.3
+        
+#     if con==3:
+#         extra+=0.3
+        
+#     if con==4:
+#         extra+=0.3
+       
+#     if con>4 or con<1:
+#         print("no es valido")
+        
+#    # ver random choice como funciona. es con opciones textuales no numerossssssssssssssssssssssssssssssssss
+
+# if extra>1.0:
+#     print ("tiene la bendicion del profe")
+# elif extra<1.0:
+#     print ("no tiene la bendicion del profe")
+
+# print ("ingrese su nota final")
+# nota=float(input())
+
+# if (nota+extra)>5.0:
+#     print("usted aprobo")
+# else:
+#     print("usted no aprobo")
+
+# profe:
+# rojos=int(input("diga la cant de rojos: "))
+
+# talleres=4
+# tDecimas=0
+# for r in range(rojos):
+#     for t in range(talleres):
+#      asist=input(f"asistio al taller numero {t+1}? 1.- si,  2.- no")
+#      if asist.lower()=="si":
+#         tDecimas+=0.3
+#     if tDecimas>=1:
+#        print("tiene la bendicion del profe")
+#     else:
+#        print("nada mas que hacer")
+#     nf=float(input("ingrese su nota final"))
+#     nf+=tDecimas
+# if tDecimas>=1:
+#    print(f"su nota final es {nf}")
+# if nf>=4:
+#       print("el alumno aprobo")
+# elif nf<4:
+#        print("el alumno aprobo")
+       
+# //////////////////////////////////repasar match, case y try para menus///////////////////////////////////
+
+# lavado de autos 
+# crear un menu para lavar auto
+# 2,- cursar pago del lavado
+# 3,- ver ventas diarias
+# 4,- salir
+# el lavado tiene 3 nuiveles
+# 1 ful 15000 2 standard 10000 3 basico 7000
+# al mostrar las ventas diarias debe mostrar la cantidad de autos que han ingresado y el monto total recaudado
+# mostrar el monto total pagado
+
+# import time
+# print ("bienvenido a lavado de autos donde el tio wea ")
+# time.sleep(1)
+# while True:
+#     try:
+#         print ("¿que deseea realizar?")
+#         time.sleep(1)
+#         serv=int(input('''1 full 15000
+#                 2 standard 10000
+#                 3 basico 7000'''))
+#         break
+#     except Exception:
+#        print("solo se aceptan numeros enteros dentro del rango")
+# for i in range (serv):
+
+
+# profe:
+
+
+
+    
+           
+    
+
+
+
+
+
+
+
+
