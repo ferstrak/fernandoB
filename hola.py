@@ -1227,72 +1227,154 @@
 # Recuerde utilizar try Exception en caso de ser necesario
 
 
-usuario1= None
-usuario2=None
-usuario3=None
-contrasena1= None
-contrasena2=None
-contrasena3= None
-usertrycount=0
-userpasswdtrycount=0
-while True:
-    op=int(input ('''
-                  selecciona una opcion
-                  1.- iniciar sesión
-                  2.- registrar usuario 
-                  3.- salir
-                  '''))
-    match op:
-        case 1:
-            print ("ingrese usuario")
-            usertry=input (())
-            if (usertry!=usuario1)(usertry!=usuario2) and (usertry!=usuario3):
-               print("usuario no encontrado")
-               userpasswdtrycount+=1
-            else:
-                print(" usuario encontrado")
+# usuario1= None
+# usuario2=None
+# usuario3=None
+# contrasena1= None
+# contrasena2=None
+# contrasena3= None
+# usertrycount=0
+# userpasswdtrycount=0
+# while True:
+#     op=int(input ('''
+#                   selecciona una opcion
+#                   1.- iniciar sesión
+#                   2.- registrar usuario 
+#                   3.- salir
+#                   '''))
+#     match op:
+#         case 1:
+#             print ("ingrese usuario")
+#             usertry=input (())
+#             if (usertry!=usuario1)(usertry!=usuario2) and (usertry!=usuario3):
+#                print("usuario no encontrado")
+#                userpasswdtrycount+=1
+#             else:
+#                 print(" usuario encontrado")
 
-            while
-            print("ingrese contraseña")
-            userpasswdtry=input (())
-            if (userpasswdtry!=contrasena1)(userpasswdtry!=contrasena2) and (userpasswdtry!=contrasena3):
-               print("contraseña incorrecta")
-               userpasswdtrycount+=1
-            else:
-                print("bienvenido")
-        case 2:
-        case 3:
-            break
-        case _:
-            print("opción invalida")
-    # ///////////////////////////////////////////////////////////////////////////////////////////
-
-
-usuario1= None
-usuario2=None
-usuario3=None
-contrasena1= None
-contrasena2=None
-contrasena3= None
-usertrycount=0
-userpasswdtrycount=0
-while True:
-    op=int(input ('''
-                  selecciona una opcion
-                  1.- iniciar sesión
-                  2.- registrar usuario 
-                  3.- salir
-                  '''))
-    match op:
-        case 1:
-        case 1:
-        case 1:
-        case 1:
-
-usar listas
+#             while
+#             print("ingrese contraseña")
+#             userpasswdtry=input (())
+#             if (userpasswdtry!=contrasena1)(userpasswdtry!=contrasena2) and (userpasswdtry!=contrasena3):
+#                print("contraseña incorrecta")
+#                userpasswdtrycount+=1
+#             else:
+#                 print("bienvenido")
+#         case 2:
+#         case 3:
+#             break
+#         case _:
+#             print("opción invalida")
+#     # ///////////////////////////////////////////////////////////////////////////////////////////
 
 
+# usuario1= None
+# usuario2=None
+# usuario3=None
+# contrasena1= None
+# contrasena2=None
+# contrasena3= None
+# usertrycount=0
+# userpasswdtrycount=0
+# while True:
+#     op=int(input ('''
+#                   selecciona una opcion
+#                   1.- iniciar sesión
+#                   2.- registrar usuario 
+#                   3.- salir
+#                   '''))
+#     match op:
+#         case 1:
+#         case 1:
+#         case 1:
+#         case 1:
 
+# usar listas
+
+# ///////////////////////////////////////////////////////////////////////////////////////
+
+                #      -4-3-2-1
+# numeros= [2,5,8,77,6,5,7,8,3,22.9]
+        #   0 1 2 3 4
+
+# print (numeros [3])
+
+
+# for numero in numeros:
+#     print (numero)
+
+
+# for numero in numeros:
+#     print ("numero x 2", numero*2)
+
+# nombres=["felipe","curly","larry","moe"]
+# print (nombres)
+
+# nombres.append ("luthien") 
+# # añade al final 
+# print (nombres)
+# print (round(numeros[5]))
+# /////////////////////
+# n=["christopher","edward","jhon"]
+# a=["nolan","norton","williams"]
+# c=0
+# for i in a:
+#     print(n[c], a[c])
+#     c+=1
+
+# nombres=[]
+# ape=[]
+# while True:
+#     print('''
+#           1 ingresar nombre
+#           2 ingresar nombre y apellidos
+#           3 buscar nombre
+#           4 salir''')
+#     op=int(input())
+#     match op:
+#         case 1:
+#             nom=input("ingrese su nombre")
+#             nombres.append(nom)
+#             apellido=input("ingrese su apellido")
+#             ape.append
+
+#         case 2:
+#             c=0
+#             for i in nombres:
+#                 print(nombres[c], ape[c])
+#                 c+=1
+#         case 3:
+#             busca=input("indique que nombre buscara: ")
+#             if busca in nombres:
+#                 print(f"el nombre {busca} esta en la lista")
+#             else:
+#                 print(f"el nombre {busca} no esta en la lista")
+#         case 4:
+#             print("saliendo")
+#             break
+#         case _:
+#             print("opción invalida")
+
+
+
+
+# ver fp2 y fp 3 en repositorio profe
+# //////////////////////////////////////////////////////////////////////////
+'''
+seleccione una opción:
+1 agregar productos (nombre producto y precio)
+2 comprar (submenu mostrando productos y precios)
+3 crear boleta
+4 salir
+
+'''
+print (''' seleccione una opcion 
+         )
+
+
+
+
+       
 
 
 
