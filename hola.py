@@ -1378,7 +1378,8 @@
 # como hacer que una lista se limpie
 # repasar el append, sum ,clear, sort, len, esnumerate (ejemplo con for), pop, round y remove mas el try except y cosas de la prueba anterior 
 # como borrar con indice
-
+# ver funcionamiento de json
+# ver archivo diccionario en repositorio
 
 
 # '''tarea
