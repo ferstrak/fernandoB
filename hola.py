@@ -1355,25 +1355,62 @@
 #         case _:
 #             print("opción invalida")
 
-
+# len = largo de un objeto
+# ver archivo 6D listas py en repositorio de profe 6D
+# como hacer que una lista se limpie
 
 
 # ver fp2 y fp 3 en repositorio profe
-# //////////////////////////////////////////////////////////////////////////
-'''
-seleccione una opción:
-1 agregar productos (nombre producto y precio)
-2 comprar (submenu mostrando productos y precios)
-3 crear boleta
-4 salir
+# # //////////////////////////////////////////////////////////////////////////
+# '''
+# seleccione una opción:
+# 1 agregar productos (nombre producto y precio)
+# 2 comprar (submenu mostrando productos y precios)
+# 3 crear boleta
+# 4 salir
 
-'''
-print (''' seleccione una opcion 
-         )
+# # '''
+# print (''' seleccione una opcion 
+#///////////////////////////////////////////////////////////////////
+
+# len = largo de un objeto
+# ver archivo 6D listas py en repositorio de profe 6D
+# como hacer que una lista se limpie
+# repasar el append, sum ,clear, sort, len, esnumerate (ejemplo con for), pop, round y remove mas el try except y cosas de la prueba anterior 
+# como borrar con indice
 
 
 
+# '''tarea
+# crear programa de manejo de notas 
+# 1 ingresar notas 
+# 2 borrar notas 
+# 3 mostrar notas
+# 4 sacar promedio nota mayor y nota menor 
+# 5 limpiar toda las notas
+# 6 salir
+# '''
+# ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+# sig prueba tiene una pregunta  
+# ver archivo notas en repositorio porfe 
+
+# vero= [[3,4,],[8,9]]
+# print(vero[1][1])
+
+
+        # key     value
+diccio={"nombre": "diego",
+        "numero": 123456,
+        "casado":True
+        }
+
+print(diccio)
+
+for key, value in diccio.items():
+    print(key,value)
+
+print(diccio["numero"])
        
 
 
