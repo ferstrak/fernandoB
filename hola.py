@@ -1518,7 +1518,8 @@ while True:
           1 agregar producto
           2 mostrar productos
           3 actualizar producto
-          4 salir
+          4 borrar producto
+          5 salir
           ''')
     op=int(input("seleccione una opción"))
     match op:
@@ -1541,6 +1542,7 @@ while True:
                 list_prod[opc-1]["nombre"]=nn
                 list_prod[opc-1]["precio"]=np
                 print("articulo actualizado!")
+        
 
 
             
@@ -1552,4 +1554,4 @@ while True:
             print("opcion invalida")
     
 
-    
+    ver json 
