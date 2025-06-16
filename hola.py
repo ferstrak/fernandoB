@@ -1401,18 +1401,155 @@
 
 
         # key     value
-diccio={"nombre": "diego",
-        "numero": 123456,
-        "casado":True
-        }
+# diccio={"nombre": "diego",
+#         "numero": 123456,
+#         "casado":True
+#         }
 
-print(diccio)
+# print(diccio)
 
-for key, value in diccio.items():
-    print(key,value)
+# for key, value in diccio.items():
+#     print(key,value)
 
-print(diccio["numero"])
+# print(diccio["numero"])
        
 
+# ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+# prueba prox semana:
+# listas 
+# diccionarios 
+# funicones
+
+# FUNCIONES
 
 
+
+# def suma():
+#         n1=int(input("ingrese un numero"))
+#         n2=int(input("ingrese otro numero"))
+#         print(n1+n2)
+
+# suma()
+
+# def resta(n1,n2):
+#         print(n1-n2)
+
+
+# num1=int(input("ingrese un numero"))
+# num2=int(input("ingrese otro numero"))
+# resta(num1,num2)
+# # ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+# n1=int(input("ingrese un numero"))
+# n2=int(input("ingrese otro numero"))
+# def suma(n1,n2):
+#         print(n1+n2)
+
+# def resta(n1,n2):
+#         print(n1-n2)
+
+# def multi(n1,n2):
+#         print(n1*n2)
+# def div(n1,n2):
+#         print(n1/n2)
+# ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+# def suma_print():
+#         n2=int(input("ingrese un numero"))
+#         n1=int(input("ingrese otro numero"))
+#         print (n1+n2)
+# def suma_return():
+#         n1=int(input("ingrese un numero"))
+#         n2=int(input("ingrese otro numero"))
+#         return n1+n2
+# suma_print()
+# veri=suma_return()
+# print(veri)
+# ///////////////////////////////////////////////////////////////////////////
+
+# def promedio (x,y,z):
+#         return (x+y+z)/3
+
+# if promedio(40,70,22) >=40:
+#         print("el alumno aprobo")
+# else:
+#         print("el alumno reprobo")
+# /////////////////////////////////////////////////////////////////////////////////////
+# '''crear un programa para calcular un porcentaje de descuento 
+# pedir al usuario el precio, el descuento a aplicar y mostrar los resultado'''
+
+# def descuento():
+#         print("ingrese precio")
+#         precio=int(input())
+#         print("ingrese descuento")
+#         descuento=int(input())
+#         ptotal=(precio-descuento)
+#         print(ptotal)
+# descuento()
+# //////////////////////////////////////////////////////////////////////////////////////
+
+# def calc_desc(precio,desc):
+#     return precio*(desc/100)
+
+# p=int(input("ingrese el precio"))
+# d=int(input("ingrese el descuento"))
+# midesc=calc_desc(p,d)
+# print("el descuento es de", midesc)
+# print("el precio a pagar es de", p-midesc)
+
+
+# productos=["zapato"]
+# precio=[20000]
+
+list_prod=[
+    {"nombre":"zapato","precio":20000},
+    {"nombre":"pelota", "precio":24000}
+        # key      value
+]
+# print(list_prod[0]["nombre"])
+
+print(list_prod)
+list_prod.insert(0,{"nombre":"paleta","precio":14000})
+print(list_prod)
+
+
+
+while True:
+    print('''
+          1 agregar producto
+          2 mostrar productos
+          3 actualizar producto
+          4 salir
+          ''')
+    op=int(input("seleccione una opción"))
+    match op:
+        case 1:
+            nom=input("ingrese el nombre del producto")
+            pre=int(input("ingrese el precio:   "))
+            list_prod.insert(0,{"nombre":nom,"precio":pre})   
+        case 2:
+            for p  in list_prod:
+                print(p)
+        case 3:
+        #      for n,p in enumerate (list_prod):
+        #         print(n+1,".-",p)
+                for i in range (len(list_prod)):
+                        print(i+1,".-",list_prod[i])
+                opc=int(input("seleccione el punto a actualizar"))
+                print(list_prod[opc-1])
+                nn=input("ingrese un nuevo nombre")
+                np=int(input("ingrese nuevo precio"))
+                list_prod[opc-1]["nombre"]=nn
+                list_prod[opc-1]["precio"]=np
+                print("articulo actualizado!")
+
+
+            
+
+        case 4:
+            
+            break
+        case _:
+            print("opcion invalida")
+    
+
+    
