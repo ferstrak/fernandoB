@@ -1500,58 +1500,135 @@
 # productos=["zapato"]
 # precio=[20000]
 
-list_prod=[
-    {"nombre":"zapato","precio":20000},
-    {"nombre":"pelota", "precio":24000}
-        # key      value
-]
-# print(list_prod[0]["nombre"])
+# list_prod=[
+#     {"nombre":"zapato","precio":20000},
+#     {"nombre":"pelota", "precio":24000}
+#         # key      value
+# ]
+# # print(list_prod[0]["nombre"])
 
-print(list_prod)
-list_prod.insert(0,{"nombre":"paleta","precio":14000})
-print(list_prod)
+# print(list_prod)
+# list_prod.insert(0,{"nombre":"paleta","precio":14000})
+# print(list_prod)
+# def mostrar_art(lista):
+#     for n,p in enumerate (list_prod):
+#         print(n+1,".-",p["nombre"],"$",p["precio"])
+                  
+                
 
 
-
-while True:
-    print('''
-          1 agregar producto
-          2 mostrar productos
-          3 actualizar producto
-          4 borrar producto
-          5 salir
-          ''')
-    op=int(input("seleccione una opción"))
-    match op:
-        case 1:
-            nom=input("ingrese el nombre del producto")
-            pre=int(input("ingrese el precio:   "))
-            list_prod.insert(0,{"nombre":nom,"precio":pre})   
-        case 2:
-            for p  in list_prod:
-                print(p)
-        case 3:
-        #      for n,p in enumerate (list_prod):
-        #         print(n+1,".-",p)
-                for i in range (len(list_prod)):
-                        print(i+1,".-",list_prod[i])
-                opc=int(input("seleccione el punto a actualizar"))
-                print(list_prod[opc-1])
-                nn=input("ingrese un nuevo nombre")
-                np=int(input("ingrese nuevo precio"))
-                list_prod[opc-1]["nombre"]=nn
-                list_prod[opc-1]["precio"]=np
-                print("articulo actualizado!")
+# while True:
+#     print('''
+#           1 agregar producto
+#           2 mostrar productos
+#           3 actualizar producto
+#           4 borrar producto
+#           5 salir
+#           ''')
+#     op=int(input("seleccione una opción"))
+#     match op:
+#         case 1:
+#             nom=input("ingrese el nombre del producto")
+#             pre=int(input("ingrese el precio:   "))
+#             list_prod.insert(0,{"nombre":nom,"precio":pre})   
+#         case 2:
+#             for p  in list_prod:
+#                 print(p)
+#         case 3:
+#               for n,p in enumerate (list_prod):
+#                  print(n+1,".-",p["nombre"],"$",p["precio"])
+#                 for i in range (len(list_prod)):
+#                      opc=int(input("seleccione el punto a actualizar"))
+#                 print(list_prod[opc-1])
+#                 nn=input("ingrese un nuevo nombre")
+#                 np=int(input("ingrese nuevo precio"))
+#                 list_prod[opc-1]["nombre"]=nn
+#                 list_prod[opc-1]["precio"]=np
+#                 print("articulo actualizado!")
         
 
 
             
 
-        case 4:
+# #         case 4:
+# #                 for n,p in enumerate (list_prod):
+# #                   print(n+1,".-",p["nombre","$",p["precio"])
+#                   opc=int(input("seleccione el producto  borrar"))
+#                 list_prod-pop(opc-1)
+
             
-            break
-        case _:
-            print("opcion invalida")
+#             break
+#         case _:
+#             print("opcion invalida")
     
 
-    ver json 
+#     ver json 
+#     ver esto en funcines.py 001D en repositorio profe
+#     ver como usar replace all
+
+
+
+# ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+'''crear programa CRUD del siguiente diccionario'''
+
+personas={
+    1: {"nombre": "diego",
+       "numeros": [7565434,97834231],
+       "estadocivil":"casado",
+       "trabajando": True,
+       "edad":64},
+    2:  {"nombre": "santiago",
+       "numeros": [7565434,97834231],
+       "estadocivil":"divorciado",
+       "trabajando": True,
+       "edad":57},
+    3:  {"nombre": "manuel",
+       "numeros": [7565434,97834231],
+       "estadocivil":"casado",
+       "trabajando": True,
+       "edad":34},
+}
+
+while True:
+    try:
+        print('''
+              1.- ingresar persona
+              2.- mostrar listado
+              3.- actualizar persona
+              4.- borrar persona
+              5.- salir
+              ''')
+        op=int(input("seleccione una opcion"))
+        match op:
+            case 1:
+                nombre=input("ingrese el nombre")
+                numero=int(input("ingrese el numero"))
+                est=int(input("estado civil 1.-casado, 2.-soltero"))
+                if est==1:
+                    estcivil="casado"
+                else:
+                    estcivil="soltero"
+                edad=int(input("ingrese la edad: "))
+                nextkey=len(personas)
+                personas[nextkey+1]={"nombre": nombre,
+                "numeros":{numero},
+                "estadocivil":estcivil,
+                "trabajando":True,
+                "edad": edad}
+                print("persona ingresada con exito")
+            case 2:
+                for persona, val in personas.items():
+                    print(persona,val)
+            case 4:
+                for persona ,val in personas .items():
+                    print(persona,val)
+
+
+            case 5:
+                break
+
+            case _:
+                print("opcon invalida")
+    except Exception as e:
+        print("el error es: ",e)
