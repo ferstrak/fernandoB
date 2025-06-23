@@ -1570,65 +1570,146 @@
 
 # ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-'''crear programa CRUD del siguiente diccionario'''
+# '''crear programa CRUD del siguiente diccionario'''
 
-personas={
-    1: {"nombre": "diego",
-       "numeros": [7565434,97834231],
-       "estadocivil":"casado",
-       "trabajando": True,
-       "edad":64},
-    2:  {"nombre": "santiago",
-       "numeros": [7565434,97834231],
-       "estadocivil":"divorciado",
-       "trabajando": True,
-       "edad":57},
-    3:  {"nombre": "manuel",
-       "numeros": [7565434,97834231],
-       "estadocivil":"casado",
-       "trabajando": True,
-       "edad":34},
-}
+# personas={
+#     1: {"nombre": "diego",
+#        "numeros": [7565434,97834231],
+#        "estadocivil":"casado",
+#        "trabajando": True,
+#        "edad":64},
+#     2:  {"nombre": "santiago",
+#        "numeros": [7565434,97834231],
+#        "estadocivil":"divorciado",
+#        "trabajando": True,
+#        "edad":57},
+#     3:  {"nombre": "manuel",
+#        "numeros": [7565434,97834231],
+#        "estadocivil":"casado",
+#        "trabajando": True,
+#        "edad":34},
+# }
 
-while True:
-    try:
-        print('''
-              1.- ingresar persona
-              2.- mostrar listado
-              3.- actualizar persona
-              4.- borrar persona
-              5.- salir
-              ''')
-        op=int(input("seleccione una opcion"))
-        match op:
-            case 1:
-                nombre=input("ingrese el nombre")
-                numero=int(input("ingrese el numero"))
-                est=int(input("estado civil 1.-casado, 2.-soltero"))
-                if est==1:
-                    estcivil="casado"
-                else:
-                    estcivil="soltero"
-                edad=int(input("ingrese la edad: "))
-                nextkey=len(personas)
-                personas[nextkey+1]={"nombre": nombre,
-                "numeros":{numero},
-                "estadocivil":estcivil,
-                "trabajando":True,
-                "edad": edad}
-                print("persona ingresada con exito")
-            case 2:
-                for persona, val in personas.items():
-                    print(persona,val)
-            case 4:
-                for persona ,val in personas .items():
-                    print(persona,val)
+# while True:
+#     try:
+#         print('''
+#               1.- ingresar persona
+#               2.- mostrar listado
+#               3.- actualizar persona
+#               4.- borrar persona
+#               5.- salir
+#               ''')
+#         op=int(input("seleccione una opcion"))
+#         match op:
+#             case 1:
+#                 nombre=input("ingrese el nombre")
+#                 numero=int(input("ingrese el numero"))
+#                 est=int(input("estado civil 1.-casado, 2.-soltero"))
+#                 if est==1:
+#                     estcivil="casado"
+#                 else:
+#                     estcivil="soltero"
+#                 edad=int(input("ingrese la edad: "))
+#                 nextkey=len(personas)
+#                 personas[nextkey+1]={"nombre": nombre,
+#                 "numeros":{numero},
+#                 "estadocivil":estcivil,
+#                 "trabajando":True,
+#                 "edad": edad}
+#                 print("persona ingresada con exito")
+#             case 2:
+#                 for persona, val in personas.items():
+#                     print(persona,val)
+#             case 4:
+#                 for persona ,val in personas .items():
+#                     print(persona,val)
 
 
-            case 5:
-                break
+#             case 5:
+#                 break
 
-            case _:
-                print("opcon invalida")
-    except Exception as e:
-        print("el error es: ",e)
+#             case _:
+#                 print("opcon invalida")
+#     except Exception as e:
+#         print("el error es: ",e)
+# /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+# validaciones
+# validar si un texto tiene 3 numeros 
+texto="darklink128"
+cant_numeros:0
+for p in texto:
+    print(p) 
+    if p.isdigit():
+        print ("es digito")
+        cant_numeros+=1
+if cant_numeros>=3:
+    print ("la cantidad de numeros es", cant_numeros)
+    print ("la cantidad d epalabras no cuemple con el ejercicio")
+else:
+     print("la cantidad de s es",cant_numeros)
+
+print ("l a "
+"la palabra no cumple com el parametro")
+
+
+     
+    # ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////print
+
+anio= 1985
+print (len)(str(anio))
+
+if len (str(anio))==4:
+    print ("tiene largo de 4 ")
+
+
+# creacion de contraseña
+# debe tener tras mqyusculas una mimuscula un # y 3 numeros
+
+
+
+passwrd =input("ingrese su contradeña")
+
+cmayus=0
+Cminus=0
+cnumeros=0
+tine_gato=False
+for 1 in passwrd: 
+    if 1.isupper():
+        cmayus+=1
+    if 1.islower():
+        cminus+=1  
+    if 1.isdigit():
+        cnumeros+=1
+    if 1.supper():
+        cnumeros+=1
+    if 1=="#":
+        tine_gato=True
+
+if cmayus<3:
+    print("debetener al menos 3 letras en mayusculas")
+elif cminus<1:
+    print("debe tener almenos 1 letra en minuscula")
+elif cnumeros<3:
+    print("debe tener al menos 3 numeros")
+
+elif tine_gato==False:
+    print("debe tener el caracter'#'")
+else:
+    print("contraseña creada")
+    return True
+
+pp=False
+while pp!=True:
+    clave=input ("ingrese su contraseña")
+
+    pp=valida_pass(clave)
+        
+
+        
+    
+# ///////////////////////////////////////////// VER DESPUES
+
+
+0
+
+
